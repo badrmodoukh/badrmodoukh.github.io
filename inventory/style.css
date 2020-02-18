@@ -1,0 +1,59 @@
+/*
+BTI320B
+Badr Modoukh
+Tuesday Oct. 14 2014
+
+Student Declaration
+
+I/we declare that the attached assignment is my/our own work in accordance with Seneca Academic Policy. No part of this assignment has been copied manually or electronically from any other source (including web sites) or distributed to other students.
+
+Name Badr Modoukh
+
+Student ID 062112123*/
+
+p {
+   font-size: 10px;
+}
+h1 {
+   color: #58FA58;
+}
+table.menu {
+   border: 2px solid green;
+   width: 100%;
+}
+td.formErr {
+   color: red;
+}
+table.view {
+   width: 100%;
+}
+table.view th {
+   background-color: #E1F5A9;
+}
+h1 {
+   color: #4B8A08;
+}
+table.menu {
+   border: 2px solid green;
+   width: 100%;
+}
+td.formErr {
+   color: red;
+}
+table.view {
+   width: 100%;
+}
+table.view th {
+   background-color: #E1F5A9;
+}
+table.view tr {
+   background-color: #A9F5BC;
+}
+th.desc {
+   width: 20%;
+}
+th.noh {
+   width: 5%;
+}
+
+

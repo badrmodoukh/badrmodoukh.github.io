@@ -1,0 +1,63 @@
+<?php
+/*BTI320B
+Badr Modoukh
+Tuesday Oct. 14 2014
+
+Student Declaration
+
+I/we declare that the attached assignment is my/our own work in accordance with Seneca Academic Policy. No part of this assignment has been copied manually or electronically from any other source (including web sites) or distributed to other students.
+
+Name Badr Modoukh
+
+Student ID 062112123
+*/
+//function to display header
+function header_text()
+{
+?>
+   <h1>Badr's Brand-Name Digital Camera's</h1>
+<?php
+}
+//function to display footer
+function footer_text()
+{
+?>
+   <p>Copyright &copy; <?php date_default_timezone_set('America/Toronto'); echo date("Y");?> Badr Modoukh Inc. </p>
+<?php
+}
+//connect to mysql and return link_identifier
+function connect_to_sql()
+{
+   $lines = file('topsecret');
+   $dbserver = trim($lines[0]);
+   $uid = trim($lines[1]);
+   $pw = trim($lines[2]);
+   $dbname = trim($lines[3]);
+
+   $link = mysqli_connect($dbserver, $uid, $pw, $dbname)
+      or die('Could not connect: ' . mysqli_error($link));
+
+   return $link;
+}
+//function to display menu using table
+function menu()
+{
+?>
+   <table class="menu">
+      <tr>
+         <th><a href="add.php">Add</a></th>
+	 <th></th>
+	 <th></th>
+	 <th><a href="view.php">View All</a></th>
+      </tr>
+   </table>
+<?php
+}
+//function to link style.css
+function style()
+{
+?>
+   <link rel="stylesheet" type="text/css" href="style.css">
+<?php
+}
+?>
